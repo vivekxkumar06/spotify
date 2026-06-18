@@ -150,7 +150,7 @@ function WrappedSection() {
       </div>
 
       {/* Right: Text */}
-      <div className="text-white relative z-10">
+      <div className="text-white relative z-10 ml-20">
         <h2 className="text-4xl font-black leading-tight tracking-tight">
           Your Wrapped at<br />the end of the year
         </h2>
@@ -205,7 +205,7 @@ function DaylistSection() {
       </div>
 
       {/* Right: Text */}
-      <div className="text-white">
+      <div className="text-white ml-20">
         <h2 className="text-4xl font-black leading-tight tracking-tight">
           Soundtrack your<br />mood with daylist
         </h2>
