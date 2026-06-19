@@ -48,24 +48,6 @@ export default function Hero() {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-black/20" />
-
-        {/* Play / Pause Button */}
-        <button
-          onClick={toggleVideo}
-          aria-label={isPlaying ? "Pause Video" : "Play Video"}
-          className="absolute bottom-6 right-6 z-30 w-12 h-12 rounded-full bg-black/70 text-white flex items-center justify-center hover:bg-black transition cursor-pointer"
-        >
-          {isPlaying ? (
-            <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-              <rect x="6" y="4" width="4" height="16" />
-              <rect x="14" y="4" width="4" height="16" />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
-              <polygon points="8,5 19,12 8,19" />
-            </svg>
-          )}
-        </button>
       </div>
 
       {/* Content */}
@@ -127,19 +109,37 @@ export default function Hero() {
         </div>
 
         {/* Second Section */}
-        <div className="mt-[500px] md:mt-[600px] lg:mt-[700px] max-w-5xl text-white">
+        <div className="mt-[500px] md:mt-[600px] lg:mt-[500px] max-w-5xl text-white">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             As the world's music hub, Spotify is where fans and artists come
             together.
           </h2>
 
-          {/* <p className="mt-[80px] text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
+           <p className="mt-[80px] text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
             It&apos;s the place to discover the perfect song for the moment.
             <br />
             The place that brings music to your whole life.
-          </p> */}
+          </p> 
         </div>
       </div>
+
+      {/* Play / Pause Button */}
+      <button
+        onClick={toggleVideo}
+        aria-label={isPlaying ? "Pause Video" : "Play Video"}
+        className="absolute bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-black/70 text-white flex items-center justify-center hover:bg-black transition"
+      >
+        {isPlaying ? (
+          <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
+            <rect x="6" y="4" width="4" height="16" />
+            <rect x="14" y="4" width="4" height="16" />
+          </svg>
+        ) : (
+          <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white">
+            <polygon points="8,5 19,12 8,19" />
+          </svg>
+        )}
+      </button>
     </section>
   );
 }

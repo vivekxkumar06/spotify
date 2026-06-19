@@ -114,12 +114,12 @@ export default function PremiumStandard() {
           Offer ends 22 June 2026.
         </p>
       </div>
-      <div className="h-[250px] md:h-[500px] bg-[url('/images/hero7.png')] bg-no-repeat bg-center mt-12 md:mt-30 bg-contain md:bg-[length:450px]">
-      </div>
-      <div className="px-4">
-        <h2 className="text-center text-white font-bold text-3xl md:text-6xl mt-5">Fresh ways to discover music</h2>
-        <p className="text-center text-white text-lg md:text-3xl mt-4 md:mt-10">Made for you, with you.</p>
-      </div>
+      <div className="h-screen bg-[url('/images/hero7.png')] bg-no-repeat bg-center  mt-12  bg-[length:450px]">
+</div>
+<div>
+  <h1 className="text-center text-white font-bold text-6xl mt-3">Fresh ways to discover music</h1>
+  <p className="text-center text-white  text-3xl mt-10">Made for you, with you.</p>
+</div>
     </section>
   );
 }

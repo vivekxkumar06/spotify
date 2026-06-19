@@ -13,7 +13,7 @@ export default function FeatureCards() {
   return (
     <section className="bg-[#121212] ">
       <div>
-  <h1 className="text-center text-white font-bold text-6xl mt-5">`The best place to listen, together`</h1>
+  <h1 className="text-center text-white font-bold text-6xl mt-8 ">`The best place to listen, together`</h1>
   <p className="text-center text-white  text-3xl mt-10">Where artists and fans meet through music..</p>
 </div>
       <div className="max-w-7xl mx-auto px-6 mt-70">
