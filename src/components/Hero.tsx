@@ -7,15 +7,17 @@ export default function Hero() {
   const [isPlaying, setIsPlaying] = useState(true);
 
   const texts = ["Live events", "Videos", "Music", "Articles", "Fans"];
-  const [textIndex, setTextIndex] = useState(0);
+  const [index, setIndex] = useState(0);
+  const [prevIndex, setPrevIndex] = useState(-1);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTextIndex((prev) => (prev + 1) % texts.length);
-    }, 2000);
+      setPrevIndex(index);
+      setIndex((prev) => (prev + 1) % texts.length);
+    }, 2500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [index]);
 
   const toggleVideo = () => {
     if (!videoRef.current) return;
@@ -57,8 +59,23 @@ export default function Hero() {
             <br />
             home for
             <br />
-            <span className="italic transition-all duration-500">
-              {texts[textIndex]}
+            <span className="relative inline-grid grid-cols-1 grid-rows-1 overflow-hidden h-[1.12em] align-bottom pb-[0.05em]">
+              {prevIndex !== -1 && (
+                <span
+                  key={`prev-${prevIndex}`}
+                  className="col-start-1 row-start-1 italic text-white animate-slide-out-up whitespace-nowrap"
+                >
+                  {texts[prevIndex]}
+                </span>
+              )}
+              <span
+                key={`curr-${index}`}
+                className={`col-start-1 row-start-1 italic text-white whitespace-nowrap ${
+                  prevIndex === -1 ? "" : "animate-slide-up"
+                }`}
+              >
+                {texts[index]}
+              </span>
             </span>
           </h1>
 

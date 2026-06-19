@@ -51,3 +51,35 @@ body {
   width: max-content;
   animation: scroll 30s linear infinite;
 }
+
+/* Vertical slide-up keyframes and classes */
+@keyframes slideUp {
+  0% {
+    transform: translateY(105%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-105%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-out-up {
+  animation: slideOutUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
