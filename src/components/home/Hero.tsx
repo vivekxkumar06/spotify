@@ -109,17 +109,17 @@ export default function Hero() {
         </div>
 
         {/* Second Section */}
-        <div className="mt-[500px] md:mt-[600px] lg:mt-[700px] max-w-5xl text-white">
+        <div className="mt-[500px] md:mt-[600px] lg:mt-[500px] max-w-5xl text-white">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             As the world's music hub, Spotify is where fans and artists come
             together.
           </h2>
 
-          {/* <p className="mt-[80px] text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
+           <p className="mt-[80px] text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
             It&apos;s the place to discover the perfect song for the moment.
             <br />
             The place that brings music to your whole life.
-          </p> */}
+          </p> 
         </div>
       </div>
 

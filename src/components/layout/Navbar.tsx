@@ -56,7 +56,7 @@ export default function Navbar() {
         </Link>
 
         <Link
-          href="/LoginPage"
+          href="/login"
           className="text-base font-bold text-gray-200 hover:text-red-500"
         >
           Log in

@@ -1,7 +1,6 @@
 import Link from "next/link";
-import {
-  Globe,
-} from "lucide-react";
+import { Globe } from "lucide-react";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const footerLinks = [
   {
@@ -112,7 +111,7 @@ export default function Footer() {
             </Link> */}
 
             <Link
-              href="#"
+              href="https://x.com/vivekxkumar06"
               className="
                 w-14 h-14
                 rounded-full
@@ -129,21 +128,41 @@ export default function Footer() {
               </span>
             </Link>
 
-            {/* <Link
-              href="#"
-              className="
-                w-14 h-14
-                rounded-full
-                bg-[#222326]
-                flex items-center justify-center
-                hover:bg-[#1ED760]
-                hover:scale-110
-                transition-all
-                duration-300
-              "
-            >
-              <Facebook size={24} />
-            </Link> */}
+   <Link
+      href="https://www.linkedin.com/in/vivek-kumar-06v/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        w-14 h-14
+        rounded-full
+        bg-[#222326]
+        flex items-center justify-center
+        hover:bg-[#1ED760]
+        hover:scale-110
+        transition-all
+        duration-300
+      "
+    >
+      <FaLinkedinIn size={24} />
+    </Link>
+    <Link
+    href="https://github.com/vivekxkumar06"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      w-14 h-14
+      rounded-full
+      bg-[#222326]
+      flex items-center justify-center
+      hover:bg-[#1ED760]
+      hover:scale-110
+      transition-all
+      duration-300
+    "
+  >
+    <FaGithub size={24} />
+  </Link>
+          
           </div>
         </div>
 

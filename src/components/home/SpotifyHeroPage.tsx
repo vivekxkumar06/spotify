@@ -8,7 +8,7 @@ export default function PlanHero() {
         {/* Spotify Waves */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative w-[70%] h-[70%]">
-            <div className="absolute top-[20%] left-[10%] w-[80%] h-14 bg-black rounded-full rotate-[-2deg]" />
+            <div className="absolute top-[20%] left-[10%] w-[80%] h-14 bg-black rounded-full rotate-[8deg]" />
             <div className="absolute top-[42%] left-[15%] w-[70%] h-12 bg-black rounded-full rotate-[8deg]" />
             <div className="absolute top-[62%] left-[22%] w-[55%] h-10 bg-black rounded-full rotate-[8deg]" />
           </div>
