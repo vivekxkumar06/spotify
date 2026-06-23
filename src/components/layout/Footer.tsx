@@ -39,7 +39,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-20 pb-10">
+    <footer className="bg-black text-white pt-12 md:pt-20 pb-8 md:pb-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between gap-12">
@@ -71,13 +71,13 @@ export default function Footer() {
                   {section.title}
                 </h3>
 
-                <ul className="space-y-4">
+                <ul className="space-y-3 md:space-y-4">
                   {section.links.map((link) => (
                     <li key={link}>
                       <Link
                         href="#"
                         className="
-                          text-lg
+                          text-sm md:text-base lg:text-lg
                           hover:text-[#1ED760]
                           transition-colors
                           duration-300
@@ -167,7 +167,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-24 flex flex-col lg:flex-row justify-between items-center gap-8">
+        <div className="mt-12 md:mt-24 flex flex-col lg:flex-row justify-between items-center gap-6 md:gap-8">
           <div className="flex flex-wrap gap-6 text-sm text-gray-400">
             {[
               "Legal",

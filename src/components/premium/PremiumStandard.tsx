@@ -28,20 +28,20 @@ const features = [
 
 export default function PremiumStandard() {
   return (
-    <section className="relative overflow-hidden bg-[#121212] w-full py-28 md:py-40 px-6 md:px-12 lg:px-24">
+    <section className="relative overflow-hidden bg-[#121212] w-full py-20 md:py-28 lg:py-40 px-5 sm:px-8 md:px-12 lg:px-24">
       {/* Background Creature Image */}
       <div
         className="absolute inset-0 bg-center bg-no-repeat opacity-10 pointer-events-none"
         style={{
           backgroundImage: "url('/images/creature.png')",
-          backgroundSize: "600px",
+          backgroundSize: "400px",
         }}
       />
 
       {/* Content */}
       <div className="relative z-10">
         {/* Header */}
-        <div className="text-center mb-20 md:mb-28">
+        <div className="text-center mb-14 md:mb-20 lg:mb-28">
           <div className="flex items-center justify-center gap-2 mb-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -57,18 +57,18 @@ export default function PremiumStandard() {
             </span>
           </div>
 
-          <h2 className="text-white font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] leading-[1.05] tracking-tight max-w-4xl mx-auto">
+          <h2 className="text-white font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-[4.5rem] leading-[1.05] tracking-tight max-w-4xl mx-auto">
             Made for fans who want more
           </h2>
         </div>
 
         {/* Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto mb-28 md:mb-36">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 max-w-7xl mx-auto mb-16 md:mb-28 lg:mb-36">
           {features.map(({ icon: Icon, title, description }) => (
             <div key={title} className="flex flex-col gap-3">
               <Icon
                 className="text-[#1ed760]"
-                size={30}
+                size={28}
                 strokeWidth={1.75}
               />
 
@@ -87,14 +87,14 @@ export default function PremiumStandard() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <a
             href="#"
-            className="inline-flex items-center justify-center bg-[#1ed760] hover:bg-[#1fdf64] active:scale-95 text-black font-bold text-sm md:text-base rounded-full px-8 py-3.5 transition-all duration-150 whitespace-nowrap"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-[#1ed760] hover:bg-[#1fdf64] active:scale-95 text-black font-bold text-sm md:text-base rounded-full px-8 py-3.5 transition-all duration-150 whitespace-nowrap"
           >
             Try 3 months for ₹99
           </a>
 
           <a
             href="#"
-            className="inline-flex items-center justify-center border border-white/60 hover:border-white text-white font-bold text-sm md:text-base rounded-full px-8 py-3.5 transition-all duration-150 whitespace-nowrap"
+            className="w-full sm:w-auto inline-flex items-center justify-center border border-white/60 hover:border-white text-white font-bold text-sm md:text-base rounded-full px-8 py-3.5 transition-all duration-150 whitespace-nowrap"
           >
             View all plans
           </a>
@@ -114,12 +114,19 @@ export default function PremiumStandard() {
           Offer ends 22 June 2026.
         </p>
       </div>
-      <div className="h-screen bg-[url('/images/hero7.png')] bg-no-repeat bg-center  mt-12  bg-[length:450px]">
-</div>
-<div>
-  <h1 className="text-center text-white font-bold text-6xl mt-3">Fresh ways to discover music</h1>
-  <p className="text-center text-white  text-3xl mt-10">Made for you, with you.</p>
-</div>
+
+      {/* Hero Image */}
+      <div className="h-[40vh] sm:h-[60vh] md:h-screen bg-[url('/images/hero7.png')] bg-no-repeat bg-center mt-10 md:mt-12 bg-[length:280px] sm:bg-[length:350px] md:bg-[length:450px]">
+      </div>
+
+      <div>
+        <h1 className="text-center text-white font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-3 px-4">
+          Fresh ways to discover music
+        </h1>
+        <p className="text-center text-white text-lg sm:text-2xl md:text-3xl mt-6 md:mt-10 px-4">
+          Made for you, with you.
+        </p>
+      </div>
     </section>
   );
 }

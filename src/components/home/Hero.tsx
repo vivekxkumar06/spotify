@@ -51,10 +51,10 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 z-20 px-6 md:px-10 pt-20">
+      <div className="absolute inset-0 z-20 px-5 sm:px-8 md:px-10 pt-20">
         {/* First Section */}
         <div className="max-w-7xl">
-          <h1 className="text-white font-black leading-[0.82] tracking-[-0.06em] text-[70px] md:text-[120px] lg:text-[170px] xl:text-[190px]">
+          <h1 className="text-white font-black leading-[0.82] tracking-[-0.06em] text-[56px] sm:text-[80px] md:text-[120px] lg:text-[170px] xl:text-[190px]">
             The ultimate
             <br />
             home for
@@ -80,24 +80,24 @@ export default function Hero() {
           </h1>
 
           {/* Buttons */}
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-6 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
             <a
               href="#"
-              className="bg-[#1ED760] text-black font-bold text-lg px-8 py-4 rounded-full hover:scale-105 transition-transform"
+              className="bg-[#1ED760] text-black font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full hover:scale-105 transition-transform"
             >
               Try 3 months for ₹99
             </a>
 
             <a
               href="#premium"
-              className="border border-gray-400 text-white font-bold text-lg px-8 py-4 rounded-full hover:border-white transition-colors"
+              className="border border-gray-400 text-white font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full hover:border-white transition-colors"
             >
               View all plans
             </a>
           </div>
 
           {/* Description */}
-          <p className="mt-6 text-gray-300 text-sm md:text-base max-w-xl leading-relaxed">
+          <p className="mt-4 md:mt-6 text-gray-300 text-xs sm:text-sm md:text-base max-w-xl leading-relaxed">
             Premium Standard only. ₹99 for 3 months, then ₹139 per month after.
             Offer only available if you haven&apos;t tried Premium before.{" "}
             <a href="#" className="underline">
@@ -109,17 +109,17 @@ export default function Hero() {
         </div>
 
         {/* Second Section */}
-        <div className="mt-[500px] md:mt-[600px] lg:mt-[500px] max-w-5xl text-white">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            As the world's music hub, Spotify is where fans and artists come
+        <div className="mt-[200px] sm:mt-[320px] md:mt-[500px] lg:mt-[500px] max-w-5xl text-white">
+          <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            As the world&apos;s music hub, Spotify is where fans and artists come
             together.
           </h2>
 
-           <p className="mt-[80px] text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
+          <p className="mt-10 md:mt-[80px] text-lg sm:text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
             It&apos;s the place to discover the perfect song for the moment.
             <br />
             The place that brings music to your whole life.
-          </p> 
+          </p>
         </div>
       </div>
 
