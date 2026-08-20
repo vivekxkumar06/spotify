@@ -32,7 +32,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-[250vh]">
+    <section className="relative h-[180vh] sm:h-[220vh] md:h-[250vh]">
       {/* Sticky Background Video */}
       <div className="sticky top-0 h-screen overflow-hidden">
         <video
@@ -51,10 +51,10 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="absolute inset-0 z-20 px-5 sm:px-8 md:px-10 pt-20">
+      <div className="absolute inset-0 z-20 px-4 sm:px-8 md:px-10 pt-20 xs:pt-24 sm:pt-28 md:pt-32">
         {/* First Section */}
         <div className="max-w-7xl">
-          <h1 className="text-white font-black leading-[0.82] tracking-[-0.06em] text-[56px] sm:text-[80px] md:text-[120px] lg:text-[170px] xl:text-[190px]">
+          <h1 className="text-white font-black leading-[0.85] sm:leading-[0.82] tracking-[-0.04em] sm:tracking-[-0.06em] text-[28px] xs:text-[40px] sm:text-[68px] md:text-[110px] lg:text-[160px] xl:text-[180px]">
             The ultimate
             <br />
             home for
@@ -80,17 +80,17 @@ export default function Hero() {
           </h1>
 
           {/* Buttons */}
-          <div className="mt-6 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
+          <div className="mt-5 sm:mt-8 md:mt-10 flex flex-col xs:flex-row items-stretch xs:items-center gap-3 md:gap-4 max-w-sm xs:max-w-none">
             <a
               href="#"
-              className="bg-[#1ED760] text-black font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full hover:scale-105 transition-transform"
+              className="bg-[#1ED760] text-black font-bold text-sm sm:text-base md:text-lg px-6 md:px-8 py-3.5 md:py-4 rounded-full hover:scale-105 transition-transform text-center"
             >
               Try 3 months for ₹99
             </a>
 
             <a
               href="#premium"
-              className="border border-gray-400 text-white font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full hover:border-white transition-colors"
+              className="border border-gray-400 text-white font-bold text-sm sm:text-base md:text-lg px-6 md:px-8 py-3.5 md:py-4 rounded-full hover:border-white transition-colors text-center"
             >
               View all plans
             </a>
@@ -109,13 +109,13 @@ export default function Hero() {
         </div>
 
         {/* Second Section */}
-        <div className="mt-[200px] sm:mt-[320px] md:mt-[500px] lg:mt-[500px] max-w-5xl text-white">
-          <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <div className="mt-14 xs:mt-24 sm:mt-[280px] md:mt-[480px] lg:mt-[500px] max-w-5xl text-white">
+          <h2 className="text-xl xs:text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
             As the world&apos;s music hub, Spotify is where fans and artists come
             together.
           </h2>
 
-          <p className="mt-10 md:mt-[80px] text-lg sm:text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
+          <p className="mt-4 sm:mt-8 md:mt-[80px] text-sm xs:text-base sm:text-xl md:text-3xl text-gray-200 leading-relaxed max-w-4xl">
             It&apos;s the place to discover the perfect song for the moment.
             <br />
             The place that brings music to your whole life.

@@ -22,12 +22,11 @@ export default function FeatureCards() {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-16 md:mt-28 lg:mt-40 pb-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mt-8 sm:mt-16 md:mt-28 pb-10">
         {cards.map((card, index) => (
           <div
             key={index}
-            className={`sticky top-10 relative rounded-[24px] sm:rounded-[32px] md:rounded-[40px] overflow-hidden ${card.bg} h-[340px] sm:h-[450px] md:h-[600px]`}
-            style={{ marginBottom: "200px" }}
+            className={`sticky top-16 md:top-20 relative rounded-[20px] sm:rounded-[32px] md:rounded-[40px] overflow-hidden ${card.bg} h-[200px] xs:h-[240px] sm:h-[420px] md:h-[550px] mb-8 sm:mb-24 md:mb-48 flex flex-col justify-center px-6 sm:px-0`}
           >
             {/* Left Illustration — hidden on small mobile, shown on sm+ */}
             <div className="hidden sm:block absolute left-4 md:left-10 top-6 md:top-10 w-[45%] h-[70%]">
@@ -41,12 +40,12 @@ export default function FeatureCards() {
               <div className="absolute left-16 md:left-32 bottom-4 md:bottom-8 w-[250px] md:w-[420px] h-[130px] md:h-[220px] rounded-[16px] md:rounded-[24px] bg-white/10 backdrop-blur-xl shadow-2xl border border-white/10" />
             </div>
 
-            {/* Right Text */}
-            <div className="absolute right-5 sm:right-10 md:right-20 top-1/2 -translate-y-1/2 max-w-[60%] sm:max-w-md">
-              <p className="text-white text-sm md:text-lg font-semibold mb-2 md:mb-4">
+            {/* Right Text / Centered Text on Mobile */}
+            <div className="sm:absolute sm:right-10 md:right-20 sm:top-1/2 sm:-translate-y-1/2 max-w-full sm:max-w-md text-center sm:text-left">
+              <p className="text-white text-xs sm:text-sm md:text-lg font-semibold mb-1 sm:mb-2 md:mb-4 uppercase tracking-wider opacity-90">
                 Premium
               </p>
-              <h2 className="text-white text-2xl sm:text-3xl md:text-5xl font-black leading-tight">
+              <h2 className="text-white text-lg xs:text-xl sm:text-3xl md:text-5xl font-black leading-tight">
                 {card.title}
               </h2>
             </div>
@@ -54,7 +53,7 @@ export default function FeatureCards() {
         ))}
 
         {/* Extra Scroll Height */}
-        <div className="h-[60px] md:h-[100px]" />
+        <div className="h-[20px] md:h-[60px]" />
       </div>
     </section>
   );
